@@ -5,12 +5,25 @@ function loadSection(sectionFile) {
         .then(response => response.text())
         .then(data => {
             mainContent.innerHTML = data;
+
+            // Cargar newBook.js solo si se ha cargado newBook.html
+            if (sectionFile.includes('newBook.html')) {
+                loadNewBookScript();
+            }
         })
         .catch(error => {
             mainContent.innerHTML = "<p>Error carregant la secció.</p>";
             console.error('Error carregant el fitxer:', error);
         });
 }
+
+function loadNewBookScript() {
+    // Crear el script y añadirlo al DOM solo cuando sea necesario
+    const script = document.createElement('script');
+    script.src = '/resources/js/newBook.js';
+    document.body.appendChild(script);
+}
+
 
 function loadSectionWithXSLT(xmlUrl, xsltUrl) {
     // Cargar el XML y el XSLT
