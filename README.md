@@ -2,7 +2,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/G9fQk55K)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16836902&assignment_repo_type=AssignmentRepo)
 
-# Projecte: Gestió de Llibres amb Interfície Web i XML
+# Projecte: Desenvolupament d'interfícies.
+### Marcos Mateo i Arnau Azogue
+## Pràctica 2: Confecció d'interfícies d'usuari
 
 Aquest projecte permet afegir i consultar llibres utilitzant una interfície web. Els llibres s'emmagatzemen en un fitxer XML i es gestionen mitjançant un servidor Flask. El client es serveix al port 8000 i l'API de Flask al port 5000.
 
@@ -38,6 +40,7 @@ Aquest projecte permet afegir i consultar llibres utilitzant una interfície web
 
 A la carpeta arrel del projecte, obre una terminal i executa la següent comanda per iniciar el servidor Flask:
 
+### Terminal 1: 
 ```bash
 python app.py
 ```
@@ -48,6 +51,7 @@ Això iniciarà el servidor Flask a `http://127.0.0.1:5000`. Aquest servidor s'e
 
 En una altra terminal, executa la següent comanda per iniciar un servidor HTTP simple al port 8000:
 
+### Terminal 2: 
 ```bash
 python -m http.server 8000
 ```
@@ -61,7 +65,7 @@ Això servirà la interfície web a `http://127.0.0.1:8000`.
    - **Consultar Llibres**: Mostra la llista de llibres emmagatzemats al fitxer XML.
    - **Nou Llibre**: Obre el formulari per afegir un nou llibre.
 
-3. Completa el formulari de "Nou Llibre" i fes clic a "Submit" per afegir un llibre. La pàgina es recarregarà automàticament després d'afegir el llibre amb èxit.
+3. Completa el formulari del "Nou Llibre" i fes clic a "Carregar" per afegir un llibre. La pàgina mostrarà un popup després d'afegir el llibre correctament.
 
 ### Notes
 
@@ -76,4 +80,4 @@ Això servirà la interfície web a `http://127.0.0.1:8000`.
 
 ## Crèdits
 
-Projecte desenvolupat per a la pràctica de gestió de dades en XML i integració amb interfície web utilitzant Flask i JavaScript.
+Projecte desenvolupat per a la pràctica de Desenvolupament d’interfícies - Pràctica 2: Confecció d’interfícies d’usuari

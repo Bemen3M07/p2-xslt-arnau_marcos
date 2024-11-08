@@ -11,8 +11,7 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/resources/css/styles.css">
         
-        <!-- Do not load the Favicon (this way does not throws the error 404) -->
-        <link rel="icon" href="data:," />
+        <link rel="icon" href="data:," /> <!-- No carreguis el Favicon (evita el error 404) -->
     </head>
 
     <body>
@@ -20,7 +19,7 @@
             <h1>La Web dels Llibres</h1>
         </header>
 
-        <div class="button-container">
+        <div class="button-container"> <!-- Els dos botons tenen accions al js que carrega les seccions corresponents -->
             <button class="btn btn-primary" onclick="loadSectionWithXSLT('resources/xml/books.xml', 'resources/xslt/books.xslt')">Consultar Llibres</button>
             <button class="btn btn-primary" onclick="loadSection('pages/newBook.html')">Nou Llibre</button>
         </div>
