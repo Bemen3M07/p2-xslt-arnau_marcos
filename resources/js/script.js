@@ -31,7 +31,7 @@ function loadNewBookScript() {
 // Funció per carregar contingut XML i XSLT i aplicar l'estil XSLT al contingut XML
 function loadSectionWithXSLT(xmlUrl, xsltUrl) {
     // Carrega el fitxer XML i el fitxer XSLT amb una promesa per obtenir-los simultàniament
-    Promise.all([fetch(xmlUrl), fetch(xsltUrl)])
+    Promise.all([fetch(xmlUrl, {cache:"no-store"}), fetch(xsltUrl)])
         .then(responses => {
             // Verifica que les dues respostes siguin correctes (status 200-299) success
             if (!responses[0].ok || !responses[1].ok) {
